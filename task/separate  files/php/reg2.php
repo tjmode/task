@@ -11,6 +11,18 @@ $stmt1->bind_param("sssss", $username , $password, $date1, $age , $number1);
 $stmt1->execute();
 $stmt1->close();
 $conn->close();
+
+$jsonfile="{username:".$username.",password:".$password.",date:".$date1.",age:".$age.",number:".$number1."}";
+
+$data[] =$jsonfile;
+
+$inp = file_get_contents('re.json');
+$tempArray = json_decode($inp);
+array_push($tempArray, $data);
+$jsonData = json_encode($tempArray);
+file_put_contents('re.json', $jsonData);
+
+
 include 'json.php';
 echo "registered";
 ?>

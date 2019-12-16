@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<?php include ("session.php")  ?>
+
 <!--<form>
 username : <input type="hidden" id="username" value="<?php #echo $user ?>">
 age<input type="text" id="age">
@@ -38,7 +38,7 @@ number<input type="text" id="number">
         <label for="fname"></label>
       </div>
       <div class="col-75">
-        <input type="hidden" id="username" value="<?php echo $user ?>">
+        <input type="hidden" id="username" value="ntg">
       </div>
     </div>
         <div class="form-group">

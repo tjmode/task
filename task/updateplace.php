@@ -1,5 +1,7 @@
 <?php
-$username=$_POST['username'];
+
+session_start();
+$username=$_SESSION["username"];
 $dob=$_POST['dob'];
 $number=$_POST['number'];
 $age=$_POST['age'];
@@ -33,7 +35,7 @@ $stmt1->execute();
 // $stmt1->bind_param("ss",$number1,$username);
 // $stmt1->execute();
 // 	}
-
+session_destroy();
 include 'json.php';
 echo "updated";
 ?>

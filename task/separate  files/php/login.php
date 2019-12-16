@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html>		
 <html>
 <head>
-	<title>register</title>
-
+	<title>login</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/css/form.css">
 <link rel="stylesheet" href="css/css/scss1.css">
 <link rel="stylesheet" href="css/css/scss.css">
-<script src="register.js"></script>
+<script src="login.js"></script>
 <body id="b2">
 <br>
 <br>
@@ -24,33 +24,18 @@
 <div class="form-group">
 <label >username</label>
 <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-<small  class="form-text text-muted">Once you register with username you cant change it....</small>
+<small  class="form-text text-muted"></small>
 </div>
 <div class="form-group">
 <label >Password</label>
 <input type="password" class="form-control" id="password" placeholder="Password" required>
 </div>
-<div class="form-group">
-<label for="exampleInputEmail1">date of birth</label>
-<input type="text" class="form-control" id="date"  placeholder="Enter dob.." required>
-<small  class="form-text text-muted">Enter with '/' example - 29/07/13</small>
+<div class="row">
+<input type="submit" value="submit" id="login">
 </div>
-<div class="form-group">
-<label for="exampleInputEmail1">Age</label>
-<input type="text" class="form-control" id="age"  placeholder="Enter age">
-<small  class="form-text text-muted"></small>
-</div>
-<div class="form-group">
-<label >number</label>
-<input type="text" class="form-control" id="number"  placeholder="Enter number">
-<small  class="form-text text-muted"></small>
+</form>
 </div>
 
-    	
-      <button type="submit" id="btn1">Submit</button>
-    </div>
-  </form>
-</div>
-<center><h1 class="para2" id="msg"></h1></center>
+<p id="msg"></p>
 </body>
 </html>
